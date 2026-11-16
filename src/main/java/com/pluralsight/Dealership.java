@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,31 +16,32 @@ public class Dealership {
         this.phone = phone;
         this.inventory = new ArrayList<>();
     }
-    public static List<Vehicle> getVehiclesByPrice(List<Vehicle> max,List<Vehicle> min){
+    public  List<Vehicle> getVehiclesByPrice(BigDecimal min, BigDecimal max){
         return null;
     }
-    public static List<Vehicle> getVehiclesByMakeModel(List<Vehicle> make,List<Vehicle> model){
+    public  List<Vehicle> getVehiclesByMakeModel(String make,String model){
         return null;
     }
-    public static List<Vehicle> getVehiclesByYear(List<Vehicle> min,List<Vehicle> max){
+    public  List<Vehicle> getVehiclesByYear(int min,int max){
         return null;
     }
-    public static List<Vehicle> getVehiclesByColor(List<Vehicle> Color){
+    public  List<Vehicle> getVehiclesByColor(String color){
         return null;
     }
-    public static List<Vehicle> getVehiclesByMileage(List<Vehicle> min,List<Vehicle> max){
+    public  List<Vehicle> getVehiclesByMileage(int min,int max){
         return null;
     }
-    public static List<Vehicle> getVehiclesByType(List<Vehicle> vehicleType){
+    public  List<Vehicle> getVehiclesByType(String vehicleType){
         return null;
     }
-    public static List<Vehicle> getAllVehicles(){
-        return null;
+    public  List<Vehicle> getAllVehicles(){
+        return inventory;
     }
-    public static void AddVehicle(Vehicle vehicle){
+    public void addVehicle(Vehicle vehicle){
+        this.inventory.add(vehicle);
 
     }
-    public static void RemoveVehicle(Vehicle vehicle){
+    public  void removeVehicle(Vehicle vehicle){
 
     }
 
